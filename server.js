@@ -11,9 +11,9 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(cors());
 app.use(express.json());
 
-// app.get('/', (req, res) => {
-//   res.send("this is working")
-// })
+app.get('/', (req, res) => {
+  res.send("this is working")
+})
 
 
 app.get('/words', (req, res, next) => {
